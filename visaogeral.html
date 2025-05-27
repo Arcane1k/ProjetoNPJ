@@ -1,0 +1,320 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Projeto NPJ</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden" style='font-family: "Work Sans", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7edf4] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#0d141c]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-[#0d141c] text-lg font-bold leading-tight tracking-[-0.015em]">NPJ Manager</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#">Dashboard</a>
+              <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#">Processos</a>
+              <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#">Agendamentos</a>
+              <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#">Tarefas</a>
+              <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#">Relatórios</a>
+            </div>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC-aQRmAXhPUheJ9vH5UluwHyAvgB_ZlnXaYb1Ol0ntnU7w1MRF-1N1E3MsnrbPv18fQulj5vTiPiEOhL4WzHZJj8yoQeWzCV6AWmgLulnybIl6pfMRnehXDYdfFtZ44OR3nEXRmaxpKRv7bYr33RaGChQeaVXZHJTfS_IJjBwuD3uLYLxK_1h87k5fgJ-32y2Q07m_mUh_iJ2knbtrgrGhu4nRn-Y51XFQSmyAo8fRia5uzMLJdqGpOIJVQ3tYfZbNSVdHztgqh14F");'
+            ></div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-[#0d141c] tracking-light text-[32px] font-bold leading-tight min-w-72">Visão Geral</p></div>
+            <div class="flex flex-wrap gap-4 p-4">
+              <div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-lg p-6 bg-[#e7edf4]">
+                <p class="text-[#0d141c] text-base font-medium leading-normal">Processos em Andamento</p>
+                <p class="text-[#0d141c] tracking-light text-2xl font-bold leading-tight">125</p>
+              </div>
+              <div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-lg p-6 bg-[#e7edf4]">
+                <p class="text-[#0d141c] text-base font-medium leading-normal">Agendamentos Recentes</p>
+                <p class="text-[#0d141c] tracking-light text-2xl font-bold leading-tight">32</p>
+              </div>
+              <div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-lg p-6 bg-[#e7edf4]">
+                <p class="text-[#0d141c] text-base font-medium leading-normal">Tarefas Pendentes</p>
+                <p class="text-[#0d141c] tracking-light text-2xl font-bold leading-tight">15</p>
+              </div>
+            </div>
+            <h2 class="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Processos em Andamento</h2>
+            <div class="px-4 py-3 @container">
+              <div class="flex overflow-hidden rounded-lg border border-[#cedbe8] bg-slate-50">
+                <table class="flex-1">
+                  <thead>
+                    <tr class="bg-slate-50">
+                      <th class="table-92db030c-825f-4568-9861-a1703cc3cbde-column-120 px-4 py-3 text-left text-[#0d141c] w-[400px] text-sm font-medium leading-normal">
+                        Número do Processo
+                      </th>
+                      <th class="table-92db030c-825f-4568-9861-a1703cc3cbde-column-240 px-4 py-3 text-left text-[#0d141c] w-[400px] text-sm font-medium leading-normal">Cliente</th>
+                      <th class="table-92db030c-825f-4568-9861-a1703cc3cbde-column-360 px-4 py-3 text-left text-[#0d141c] w-[400px] text-sm font-medium leading-normal">Tipo</th>
+                      <th class="table-92db030c-825f-4568-9861-a1703cc3cbde-column-480 px-4 py-3 text-left text-[#0d141c] w-60 text-sm font-medium leading-normal">Status</th>
+                      <th class="table-92db030c-825f-4568-9861-a1703cc3cbde-column-600 px-4 py-3 text-left text-[#0d141c] w-[400px] text-sm font-medium leading-normal">
+                        Data de Criação
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-t border-t-[#cedbe8]">
+                      <td class="table-92db030c-825f-4568-9861-a1703cc3cbde-column-120 h-[72px] px-4 py-2 w-[400px] text-[#0d141c] text-sm font-normal leading-normal">
+                        2023-NPJ-001
+                      </td>
+                      <td class="table-92db030c-825f-4568-9861-a1703cc3cbde-column-240 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">
+                        Sofia Almeida
+                      </td>
+                      <td class="table-92db030c-825f-4568-9861-a1703cc3cbde-column-360 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">Divórcio</td>
+                      <td class="table-92db030c-825f-4568-9861-a1703cc3cbde-column-480 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#e7edf4] text-[#0d141c] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Em andamento</span>
+                        </button>
+                      </td>
+                      <td class="table-92db030c-825f-4568-9861-a1703cc3cbde-column-600 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">
+                        2023-01-15
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#cedbe8]">
+                      <td class="table-92db030c-825f-4568-9861-a1703cc3cbde-column-120 h-[72px] px-4 py-2 w-[400px] text-[#0d141c] text-sm font-normal leading-normal">
+                        2023-NPJ-002
+                      </td>
+                      <td class="table-92db030c-825f-4568-9861-a1703cc3cbde-column-240 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">
+                        Lucas Pereira
+                      </td>
+                      <td class="table-92db030c-825f-4568-9861-a1703cc3cbde-column-360 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">Guarda</td>
+                      <td class="table-92db030c-825f-4568-9861-a1703cc3cbde-column-480 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#e7edf4] text-[#0d141c] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Em andamento</span>
+                        </button>
+                      </td>
+                      <td class="table-92db030c-825f-4568-9861-a1703cc3cbde-column-600 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">
+                        2023-02-20
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#cedbe8]">
+                      <td class="table-92db030c-825f-4568-9861-a1703cc3cbde-column-120 h-[72px] px-4 py-2 w-[400px] text-[#0d141c] text-sm font-normal leading-normal">
+                        2023-NPJ-003
+                      </td>
+                      <td class="table-92db030c-825f-4568-9861-a1703cc3cbde-column-240 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">
+                        Isabela Costa
+                      </td>
+                      <td class="table-92db030c-825f-4568-9861-a1703cc3cbde-column-360 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">
+                        Pensão Alimentícia
+                      </td>
+                      <td class="table-92db030c-825f-4568-9861-a1703cc3cbde-column-480 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#e7edf4] text-[#0d141c] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Em andamento</span>
+                        </button>
+                      </td>
+                      <td class="table-92db030c-825f-4568-9861-a1703cc3cbde-column-600 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">
+                        2023-03-10
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#cedbe8]">
+                      <td class="table-92db030c-825f-4568-9861-a1703cc3cbde-column-120 h-[72px] px-4 py-2 w-[400px] text-[#0d141c] text-sm font-normal leading-normal">
+                        2023-NPJ-004
+                      </td>
+                      <td class="table-92db030c-825f-4568-9861-a1703cc3cbde-column-240 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">
+                        Mateus Oliveira
+                      </td>
+                      <td class="table-92db030c-825f-4568-9861-a1703cc3cbde-column-360 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">
+                        Investigação de Paternidade
+                      </td>
+                      <td class="table-92db030c-825f-4568-9861-a1703cc3cbde-column-480 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#e7edf4] text-[#0d141c] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Em andamento</span>
+                        </button>
+                      </td>
+                      <td class="table-92db030c-825f-4568-9861-a1703cc3cbde-column-600 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">
+                        2023-04-05
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#cedbe8]">
+                      <td class="table-92db030c-825f-4568-9861-a1703cc3cbde-column-120 h-[72px] px-4 py-2 w-[400px] text-[#0d141c] text-sm font-normal leading-normal">
+                        2023-NPJ-005
+                      </td>
+                      <td class="table-92db030c-825f-4568-9861-a1703cc3cbde-column-240 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">
+                        Carolina Santos
+                      </td>
+                      <td class="table-92db030c-825f-4568-9861-a1703cc3cbde-column-360 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">Adoção</td>
+                      <td class="table-92db030c-825f-4568-9861-a1703cc3cbde-column-480 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#e7edf4] text-[#0d141c] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Em andamento</span>
+                        </button>
+                      </td>
+                      <td class="table-92db030c-825f-4568-9861-a1703cc3cbde-column-600 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">
+                        2023-05-12
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <style>
+                          @container(max-width:120px){.table-92db030c-825f-4568-9861-a1703cc3cbde-column-120{display: none;}}
+                @container(max-width:240px){.table-92db030c-825f-4568-9861-a1703cc3cbde-column-240{display: none;}}
+                @container(max-width:360px){.table-92db030c-825f-4568-9861-a1703cc3cbde-column-360{display: none;}}
+                @container(max-width:480px){.table-92db030c-825f-4568-9861-a1703cc3cbde-column-480{display: none;}}
+                @container(max-width:600px){.table-92db030c-825f-4568-9861-a1703cc3cbde-column-600{display: none;}}
+              </style>
+            </div>
+            <h2 class="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Agendamentos Recentes</h2>
+            <div class="px-4 py-3 @container">
+              <div class="flex overflow-hidden rounded-lg border border-[#cedbe8] bg-slate-50">
+                <table class="flex-1">
+                  <thead>
+                    <tr class="bg-slate-50">
+                      <th class="table-3c611b9e-6620-4f2c-be7d-a543e8bd570c-column-120 px-4 py-3 text-left text-[#0d141c] w-[400px] text-sm font-medium leading-normal">Data</th>
+                      <th class="table-3c611b9e-6620-4f2c-be7d-a543e8bd570c-column-240 px-4 py-3 text-left text-[#0d141c] w-[400px] text-sm font-medium leading-normal">Horário</th>
+                      <th class="table-3c611b9e-6620-4f2c-be7d-a543e8bd570c-column-360 px-4 py-3 text-left text-[#0d141c] w-[400px] text-sm font-medium leading-normal">Cliente</th>
+                      <th class="table-3c611b9e-6620-4f2c-be7d-a543e8bd570c-column-480 px-4 py-3 text-left text-[#0d141c] w-[400px] text-sm font-medium leading-normal">Assunto</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-t border-t-[#cedbe8]">
+                      <td class="table-3c611b9e-6620-4f2c-be7d-a543e8bd570c-column-120 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">
+                        2023-06-15
+                      </td>
+                      <td class="table-3c611b9e-6620-4f2c-be7d-a543e8bd570c-column-240 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">10:00</td>
+                      <td class="table-3c611b9e-6620-4f2c-be7d-a543e8bd570c-column-360 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">
+                        Sofia Almeida
+                      </td>
+                      <td class="table-3c611b9e-6620-4f2c-be7d-a543e8bd570c-column-480 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">
+                        Reunião inicial
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#cedbe8]">
+                      <td class="table-3c611b9e-6620-4f2c-be7d-a543e8bd570c-column-120 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">
+                        2023-06-16
+                      </td>
+                      <td class="table-3c611b9e-6620-4f2c-be7d-a543e8bd570c-column-240 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">14:00</td>
+                      <td class="table-3c611b9e-6620-4f2c-be7d-a543e8bd570c-column-360 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">
+                        Lucas Pereira
+                      </td>
+                      <td class="table-3c611b9e-6620-4f2c-be7d-a543e8bd570c-column-480 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">
+                        Audiência
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#cedbe8]">
+                      <td class="table-3c611b9e-6620-4f2c-be7d-a543e8bd570c-column-120 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">
+                        2023-06-17
+                      </td>
+                      <td class="table-3c611b9e-6620-4f2c-be7d-a543e8bd570c-column-240 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">11:30</td>
+                      <td class="table-3c611b9e-6620-4f2c-be7d-a543e8bd570c-column-360 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">
+                        Isabela Costa
+                      </td>
+                      <td class="table-3c611b9e-6620-4f2c-be7d-a543e8bd570c-column-480 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">
+                        Acompanhamento
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <style>
+                          @container(max-width:120px){.table-3c611b9e-6620-4f2c-be7d-a543e8bd570c-column-120{display: none;}}
+                @container(max-width:240px){.table-3c611b9e-6620-4f2c-be7d-a543e8bd570c-column-240{display: none;}}
+                @container(max-width:360px){.table-3c611b9e-6620-4f2c-be7d-a543e8bd570c-column-360{display: none;}}
+                @container(max-width:480px){.table-3c611b9e-6620-4f2c-be7d-a543e8bd570c-column-480{display: none;}}
+              </style>
+            </div>
+            <h2 class="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Tarefas Pendentes</h2>
+            <div class="px-4 py-3 @container">
+              <div class="flex overflow-hidden rounded-lg border border-[#cedbe8] bg-slate-50">
+                <table class="flex-1">
+                  <thead>
+                    <tr class="bg-slate-50">
+                      <th class="table-b26485f2-104c-41fc-9186-10622f20ab39-column-120 px-4 py-3 text-left text-[#0d141c] w-[400px] text-sm font-medium leading-normal">Tarefa</th>
+                      <th class="table-b26485f2-104c-41fc-9186-10622f20ab39-column-240 px-4 py-3 text-left text-[#0d141c] w-[400px] text-sm font-medium leading-normal">
+                        Responsável
+                      </th>
+                      <th class="table-b26485f2-104c-41fc-9186-10622f20ab39-column-360 px-4 py-3 text-left text-[#0d141c] w-[400px] text-sm font-medium leading-normal">
+                        Data de Vencimento
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-t border-t-[#cedbe8]">
+                      <td class="table-b26485f2-104c-41fc-9186-10622f20ab39-column-120 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">
+                        Preparar documentos
+                      </td>
+                      <td class="table-b26485f2-104c-41fc-9186-10622f20ab39-column-240 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">
+                        Dr. Ricardo
+                      </td>
+                      <td class="table-b26485f2-104c-41fc-9186-10622f20ab39-column-360 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">
+                        2023-06-20
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#cedbe8]">
+                      <td class="table-b26485f2-104c-41fc-9186-10622f20ab39-column-120 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">
+                        Entrar em contato com o cliente
+                      </td>
+                      <td class="table-b26485f2-104c-41fc-9186-10622f20ab39-column-240 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">
+                        Dra. Fernanda
+                      </td>
+                      <td class="table-b26485f2-104c-41fc-9186-10622f20ab39-column-360 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">
+                        2023-06-22
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#cedbe8]">
+                      <td class="table-b26485f2-104c-41fc-9186-10622f20ab39-column-120 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">
+                        Revisar processo
+                      </td>
+                      <td class="table-b26485f2-104c-41fc-9186-10622f20ab39-column-240 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">
+                        Dr. Ricardo
+                      </td>
+                      <td class="table-b26485f2-104c-41fc-9186-10622f20ab39-column-360 h-[72px] px-4 py-2 w-[400px] text-[#49739c] text-sm font-normal leading-normal">
+                        2023-06-25
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <style>
+                          @container(max-width:120px){.table-b26485f2-104c-41fc-9186-10622f20ab39-column-120{display: none;}}
+                @container(max-width:240px){.table-b26485f2-104c-41fc-9186-10622f20ab39-column-240{display: none;}}
+                @container(max-width:360px){.table-b26485f2-104c-41fc-9186-10622f20ab39-column-360{display: none;}}
+              </style>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
