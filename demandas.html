@@ -1,240 +1,332 @@
 <html>
-  <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link
-      rel="stylesheet"
-      as="style"
-      onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900"
-    />
 
-    <title>Agendamentos</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+  <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900" />
 
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  </head>
-  <body>
-    <div class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden" style='font-family: "Work Sans", "Noto Sans", sans-serif;'>
-      <div class="layout-container flex h-full grow flex-col">
-        <div class="gap-1 px-6 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col w-80">
-            <div class="flex h-full min-h-[700px] flex-col justify-between bg-slate-50 p-4">
-              <div class="flex flex-col gap-4">
-                <h1 class="text-[#0d151c] text-base font-medium leading-normal">NPJ Gestor</h1>
-                <div class="flex flex-col gap-2">
-                  <div class="flex items-center gap-3 px-3 py-2"><p class="text-[#0d151c] text-sm font-medium leading-normal">Dashboard</p></div>
-                  <div class="flex items-center gap-3 px-3 py-2 rounded-full bg-[#e7edf4]"><p class="text-[#0d151c] text-sm font-medium leading-normal">Agendamentos</p></div>
-                  <div class="flex items-center gap-3 px-3 py-2"><p class="text-[#0d151c] text-sm font-medium leading-normal">Atendimentos</p></div>
-                  <div class="flex items-center gap-3 px-3 py-2"><p class="text-[#0d151c] text-sm font-medium leading-normal">Configurações</p></div>
-                  <div class="flex items-center gap-3 px-3 py-2"><p class="text-[#0d151c] text-sm font-medium leading-normal">Documentos</p></div>
-                </div>
+  <title>Agendamentos</title>
+  <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+
+<body>
+  <div class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden"
+    style='font-family: "Work Sans", "Noto Sans", sans-serif;'>
+    <div class="layout-container flex h-full grow flex-col">
+      <div class="gap-1 px-6 flex flex-1 justify-center py-5">
+        <div class="layout-content-container flex flex-col w-80">
+          <div class="flex h-full min-h-[700px] flex-col justify-between bg-slate-50 p-4">
+            <div class="flex flex-col gap-4">
+              <h1 class="text-[#0d151c] text-base font-medium leading-normal">NPJ Gestor</h1>
+              <div class="flex flex-col gap-2">
+                <a href="visaogeral.html" class="flex items-center gap-3 px-3 py-2 hover:bg-[#e7edf4] rounded-full">
+                  <p class="text-[#0d151c] text-sm font-medium leading-normal">Dashboard</p>
+                </a>
+                <a href="demandas.html" class="flex items-center gap-3 px-3 py-2 bg-[#e7edf4] rounded-full">
+                  <p class="text-[#0d151c] text-sm font-medium leading-normal">Agendamentos</p>
+                </a>
+                <a href="atendimentos.html" class="flex items-center gap-3 px-3 py-2 hover:bg-[#e7edf4] rounded-full">
+                  <p class="text-[#0d151c] text-sm font-medium leading-normal">Atendimentos</p>
+                </a>
+                <a href="configuracao.html" class="flex items-center gap-3 px-3 py-2 hover:bg-[#e7edf4] rounded-full">
+                  <p class="text-[#0d151c] text-sm font-medium leading-normal">Configurações</p>
+                </a>
+                <a href="documentos.html" class="flex items-center gap-3 px-3 py-2 hover:bg-[#e7edf4] rounded-full">
+                  <p class="text-[#0d151c] text-sm font-medium leading-normal">Documentos</p>
+                </a>
               </div>
             </div>
           </div>
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div class="flex flex-wrap justify-between gap-3 p-4">
-              <p class="text-[#0d151c] tracking-light text-[32px] font-bold leading-tight min-w-72">Agendamentos</p>
-              <button
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e7edf4] text-[#0d151c] text-sm font-medium leading-normal"
-              >
-                <span class="truncate">Novo Agendamento</span>
-              </button>
-            </div>
-            <div class="px-4 py-3">
-              <label class="flex flex-col min-w-40 h-12 w-full">
-                <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
-                  <div
-                    class="text-[#49749c] flex border-none bg-[#e7edf4] items-center justify-center pl-4 rounded-l-xl border-r-0"
-                    data-icon="MagnifyingGlass"
-                    data-size="24px"
-                    data-weight="regular"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                      <path
-                        d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <input
-                    placeholder="Buscar agendamentos..."
-                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0d151c] focus:outline-0 focus:ring-0 border-none bg-[#e7edf4] focus:border-none h-full placeholder:text-[#49749c] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
-                    value=""
-                  />
+        </div>
+        <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+          <div class="flex flex-wrap justify-between gap-3 p-4">
+            <p class="text-[#0d151c] tracking-light text-[32px] font-bold leading-tight min-w-72">Agendamentos</p>
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e7edf4] text-[#0d151c] text-sm font-medium leading-normal">
+              <span class="truncate">Novo Agendamento</span>
+            </button>
+          </div>
+          <div class="px-4 py-3">
+            <label class="flex flex-col min-w-40 h-12 w-full">
+              <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+                <div
+                  class="text-[#49749c] flex border-none bg-[#e7edf4] items-center justify-center pl-4 rounded-l-xl border-r-0"
+                  data-icon="MagnifyingGlass" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                    viewBox="0 0 256 256">
+                    <path
+                      d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z">
+                    </path>
+                  </svg>
                 </div>
-              </label>
-            </div>
-            <div class="pb-3">
-              <div class="flex border-b border-[#cedce8] px-4 gap-8">
-                <a class="flex flex-col items-center justify-center border-b-[3px] border-b-[#0b80ee] text-[#0d151c] pb-[13px] pt-4" href="#">
-                  <p class="text-[#0d151c] text-sm font-bold leading-normal tracking-[0.015em]">Todos</p>
-                </a>
-                <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#49749c] pb-[13px] pt-4" href="#">
-                  <p class="text-[#49749c] text-sm font-bold leading-normal tracking-[0.015em]">Em andamento</p>
-                </a>
-                <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#49749c] pb-[13px] pt-4" href="#">
-                  <p class="text-[#49749c] text-sm font-bold leading-normal tracking-[0.015em]">Concluídos</p>
-                </a>
-                <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#49749c] pb-[13px] pt-4" href="#">
-                  <p class="text-[#49749c] text-sm font-bold leading-normal tracking-[0.015em]">Arquivados</p>
-                </a>
+                <input placeholder="Buscar agendamentos..."
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0d151c] focus:outline-0 focus:ring-0 border-none bg-[#e7edf4] focus:border-none h-full placeholder:text-[#49749c] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                  value="" />
               </div>
+            </label>
+          </div>
+          <div class="pb-3">
+            <div class="flex border-b border-[#cedce8] px-4 gap-8">
+              <a class="flex flex-col items-center justify-center border-b-[3px] border-b-[#0b80ee] text-[#0d151c] pb-[13px] pt-4"
+                href="#">
+                <p class="text-[#0d151c] text-sm font-bold leading-normal tracking-[0.015em]">Todos</p>
+              </a>
+              <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#49749c] pb-[13px] pt-4"
+                href="#">
+                <p class="text-[#49749c] text-sm font-bold leading-normal tracking-[0.015em]">Em andamento</p>
+              </a>
+              <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#49749c] pb-[13px] pt-4"
+                href="#">
+                <p class="text-[#49749c] text-sm font-bold leading-normal tracking-[0.015em]">Concluídos</p>
+              </a>
+              <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#49749c] pb-[13px] pt-4"
+                href="#">
+                <p class="text-[#49749c] text-sm font-bold leading-normal tracking-[0.015em]">Arquivados</p>
+              </a>
             </div>
-            <div class="px-4 py-3 @container">
-              <div class="flex overflow-hidden rounded-xl border border-[#cedce8] bg-slate-50">
-                <table class="flex-1">
-                  <thead>
-                    <tr class="bg-slate-50">
-                      <th class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-120 px-4 py-3 text-left text-[#0d151c] w-[400px] text-sm font-medium leading-normal">Número</th>
-                      <th class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-240 px-4 py-3 text-left text-[#0d151c] w-[400px] text-sm font-medium leading-normal">Cliente</th>
-                      <th class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-360 px-4 py-3 text-left text-[#0d151c] w-[400px] text-sm font-medium leading-normal">Assunto</th>
-                      <th class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-480 px-4 py-3 text-left text-[#0d151c] w-[400px] text-sm font-medium leading-normal">
-                        Responsável
-                      </th>
-                      <th class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-600 px-4 py-3 text-left text-[#0d151c] w-[400px] text-sm font-medium leading-normal">
-                        Estagiário
-                      </th>
-                      <th class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-720 px-4 py-3 text-left text-[#0d151c] w-[400px] text-sm font-medium leading-normal">Prazo</th>
-                      <th class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-840 px-4 py-3 text-left text-[#0d151c] w-60 text-sm font-medium leading-normal">Status</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="border-t border-t-[#cedce8]">
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-120 h-[72px] px-4 py-2 w-[400px] text-[#0d151c] text-sm font-normal leading-normal">12345</td>
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-240 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
-                        Sofia Almeida
-                      </td>
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-360 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">Divórcio</td>
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-480 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
-                        Dr. Lucas Mendes
-                      </td>
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-600 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
-                        Beatriz Souza
-                      </td>
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-720 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
-                        15/07/2024
-                      </td>
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-840 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
-                        <button
-                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e7edf4] text-[#0d151c] text-sm font-medium leading-normal w-full"
-                        >
-                          <span class="truncate">Em andamento</span>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr class="border-t border-t-[#cedce8]">
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-120 h-[72px] px-4 py-2 w-[400px] text-[#0d151c] text-sm font-normal leading-normal">67890</td>
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-240 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
-                        Rafael Pereira
-                      </td>
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-360 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
-                        Inventário
-                      </td>
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-480 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
-                        Dra. Mariana Lima
-                      </td>
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-600 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
-                        Gabriel Santos
-                      </td>
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-720 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
-                        30/08/2024
-                      </td>
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-840 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
-                        <button
-                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e7edf4] text-[#0d151c] text-sm font-medium leading-normal w-full"
-                        >
-                          <span class="truncate">Concluído</span>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr class="border-t border-t-[#cedce8]">
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-120 h-[72px] px-4 py-2 w-[400px] text-[#0d151c] text-sm font-normal leading-normal">11223</td>
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-240 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
-                        Carolina Costa
-                      </td>
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-360 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
-                        Alimentos
-                      </td>
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-480 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
-                        Dr. Rodrigo Oliveira
-                      </td>
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-600 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
-                        Isabela Alves
-                      </td>
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-720 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
-                        20/06/2024
-                      </td>
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-840 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
-                        <button
-                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e7edf4] text-[#0d151c] text-sm font-medium leading-normal w-full"
-                        >
-                          <span class="truncate">Em andamento</span>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr class="border-t border-t-[#cedce8]">
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-120 h-[72px] px-4 py-2 w-[400px] text-[#0d151c] text-sm font-normal leading-normal">44556</td>
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-240 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
-                        Mateus Fernandes
-                      </td>
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-360 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">Guarda</td>
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-480 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
-                        Dra. Patrícia Rocha
-                      </td>
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-600 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
-                        Enzo Martins
-                      </td>
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-720 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
-                        10/09/2024
-                      </td>
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-840 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
-                        <button
-                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e7edf4] text-[#0d151c] text-sm font-medium leading-normal w-full"
-                        >
-                          <span class="truncate">Em andamento</span>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr class="border-t border-t-[#cedce8]">
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-120 h-[72px] px-4 py-2 w-[400px] text-[#0d151c] text-sm font-normal leading-normal">77889</td>
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-240 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
-                        Camila Dias
-                      </td>
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-360 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
-                        Paternidade
-                      </td>
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-480 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
-                        Dr. Thiago Almeida
-                      </td>
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-600 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
-                        Júlia Costa
-                      </td>
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-720 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
-                        25/07/2024
-                      </td>
-                      <td class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-840 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
-                        <button
-                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e7edf4] text-[#0d151c] text-sm font-medium leading-normal w-full"
-                        >
-                          <span class="truncate">Concluído</span>
-                        </button>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <style>
-                          @container(max-width:120px){.table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-120{display: none;}}
-                @container(max-width:240px){.table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-240{display: none;}}
-                @container(max-width:360px){.table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-360{display: none;}}
-                @container(max-width:480px){.table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-480{display: none;}}
-                @container(max-width:600px){.table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-600{display: none;}}
-                @container(max-width:720px){.table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-720{display: none;}}
-                @container(max-width:840px){.table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-840{display: none;}}
-              </style>
+          </div>
+          <div class="px-4 py-3 @container">
+            <div class="flex overflow-hidden rounded-xl border border-[#cedce8] bg-slate-50">
+              <table class="flex-1">
+                <thead>
+                  <tr class="bg-slate-50">
+                    <th
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-120 px-4 py-3 text-left text-[#0d151c] w-[400px] text-sm font-medium leading-normal">
+                      Número</th>
+                    <th
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-240 px-4 py-3 text-left text-[#0d151c] w-[400px] text-sm font-medium leading-normal">
+                      Cliente</th>
+                    <th
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-360 px-4 py-3 text-left text-[#0d151c] w-[400px] text-sm font-medium leading-normal">
+                      Assunto</th>
+                    <th
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-480 px-4 py-3 text-left text-[#0d151c] w-[400px] text-sm font-medium leading-normal">
+                      Responsável
+                    </th>
+                    <th
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-600 px-4 py-3 text-left text-[#0d151c] w-[400px] text-sm font-medium leading-normal">
+                      Estagiário
+                    </th>
+                    <th
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-720 px-4 py-3 text-left text-[#0d151c] w-[400px] text-sm font-medium leading-normal">
+                      Prazo</th>
+                    <th
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-840 px-4 py-3 text-left text-[#0d151c] w-60 text-sm font-medium leading-normal">
+                      Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-t border-t-[#cedce8]">
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-120 h-[72px] px-4 py-2 w-[400px] text-[#0d151c] text-sm font-normal leading-normal">
+                      12345</td>
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-240 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                      Sofia Almeida
+                    </td>
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-360 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                      Divórcio</td>
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-480 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                      Dr. Lucas Mendes
+                    </td>
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-600 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                      Beatriz Souza
+                    </td>
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-720 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                      15/07/2024
+                    </td>
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-840 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                      <button
+                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e7edf4] text-[#0d151c] text-sm font-medium leading-normal w-full">
+                        <span class="truncate">Em andamento</span>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="border-t border-t-[#cedce8]">
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-120 h-[72px] px-4 py-2 w-[400px] text-[#0d151c] text-sm font-normal leading-normal">
+                      67890</td>
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-240 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                      Rafael Pereira
+                    </td>
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-360 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                      Inventário
+                    </td>
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-480 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                      Dra. Mariana Lima
+                    </td>
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-600 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                      Gabriel Santos
+                    </td>
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-720 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                      30/08/2024
+                    </td>
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-840 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                      <button
+                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e7edf4] text-[#0d151c] text-sm font-medium leading-normal w-full">
+                        <span class="truncate">Concluído</span>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="border-t border-t-[#cedce8]">
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-120 h-[72px] px-4 py-2 w-[400px] text-[#0d151c] text-sm font-normal leading-normal">
+                      11223</td>
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-240 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                      Carolina Costa
+                    </td>
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-360 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                      Alimentos
+                    </td>
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-480 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                      Dr. Rodrigo Oliveira
+                    </td>
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-600 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                      Isabela Alves
+                    </td>
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-720 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                      20/06/2024
+                    </td>
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-840 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                      <button
+                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e7edf4] text-[#0d151c] text-sm font-medium leading-normal w-full">
+                        <span class="truncate">Em andamento</span>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="border-t border-t-[#cedce8]">
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-120 h-[72px] px-4 py-2 w-[400px] text-[#0d151c] text-sm font-normal leading-normal">
+                      44556</td>
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-240 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                      Mateus Fernandes
+                    </td>
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-360 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                      Guarda</td>
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-480 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                      Dra. Patrícia Rocha
+                    </td>
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-600 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                      Enzo Martins
+                    </td>
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-720 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                      10/09/2024
+                    </td>
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-840 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                      <button
+                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e7edf4] text-[#0d151c] text-sm font-medium leading-normal w-full">
+                        <span class="truncate">Em andamento</span>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="border-t border-t-[#cedce8]">
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-120 h-[72px] px-4 py-2 w-[400px] text-[#0d151c] text-sm font-normal leading-normal">
+                      77889</td>
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-240 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                      Camila Dias
+                    </td>
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-360 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                      Paternidade
+                    </td>
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-480 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                      Dr. Thiago Almeida
+                    </td>
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-600 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                      Júlia Costa
+                    </td>
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-720 h-[72px] px-4 py-2 w-[400px] text-[#49749c] text-sm font-normal leading-normal">
+                      25/07/2024
+                    </td>
+                    <td
+                      class="table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-840 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                      <button
+                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e7edf4] text-[#0d151c] text-sm font-medium leading-normal w-full">
+                        <span class="truncate">Concluído</span>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
+            <style>
+              @container(max-width:120px) {
+                .table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-120 {
+                  display: none;
+                }
+              }
+
+              @container(max-width:240px) {
+                .table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-240 {
+                  display: none;
+                }
+              }
+
+              @container(max-width:360px) {
+                .table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-360 {
+                  display: none;
+                }
+              }
+
+              @container(max-width:480px) {
+                .table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-480 {
+                  display: none;
+                }
+              }
+
+              @container(max-width:600px) {
+                .table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-600 {
+                  display: none;
+                }
+              }
+
+              @container(max-width:720px) {
+                .table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-720 {
+                  display: none;
+                }
+              }
+
+              @container(max-width:840px) {
+                .table-f89e4ae7-03e6-4468-af2e-dbb6c494e6ba-column-840 {
+                  display: none;
+                }
+              }
+            </style>
           </div>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
